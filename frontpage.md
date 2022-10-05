@@ -1,7 +1,7 @@
 ---
 permalink: /
 layout: home
-title: Bienvenido
+title: Bienvenidos
 ---
 
 Este es un portfolio donde me propongo aplicar y desarrollar los conocimientos adquiridos en la materia Introducción a los Métodos de Aprendizaje Automático.
