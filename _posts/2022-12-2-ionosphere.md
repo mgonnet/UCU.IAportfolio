@@ -13,19 +13,19 @@ El dataset ya está normalizado al rango [-1, 1], no hay faltantes y se cuenta c
 
 ## Proceso
 
-![](../_images/ionosfera_proceso.png)
+![](..\_images\ionosfera_proceso.png)
 
 Se utiliza un cross validation, con 50 folds y strattified sampling para evaluar la performance de cada algoritmo. 
 
 Random Forest fue configurado con 100 árboles y una profundidad máxima de 30. La regresión logística fue configurada con sus parámetros por defecto y el Knn con n = 3.
 
-![](../_images/ionosfera_regresionLogisticaParametros.png)
+![](..\_images\ionosfera_regresionLogisticaParametros.png)
 
 ## Análisis de resultados
 
-![](../_images/ionosfera_performance_knn.png)
-![](../_images/ionosfera_performance_logisticregression.png)
-![](../_images/ionosfera_performance_randomForest.png)
+![](..\_images\ionosfera_performance_knn.png)
+![](..\_images\ionosfera_performance_logisticregression.png)
+![](..\_images\ionosfera_performance_randomForest.png)
 
 Se observa que el algoritmo que obtiene la mejor accuracy es Random Forest, con 93,21%. Esto se debe en gran medida a que obtiene el mejor valor de recall para la clase `b` (bad). El recall es de 88,89%, 77,78% y 61,11% para Random Forest, Regresión Logística y Knn respectivamente.
 
@@ -38,7 +38,7 @@ Por tanto el mejor modelo para este caso es el obtenido con Random Forest. Este 
 
 Sin embargo, bajo ciertos supuestos el modelo Random Forest puede aún resultar útil. Supongase que el proceso de tomar las mediciones no es muy costoso, que el mayor costo está en realizar los estudios en base a las mediciones. Por tanto, los investigadores querrán asegurarse de que las mediciones con las que trabajan son buenas, aun si tienen que realizar un mayor número de mediciones para contar con las suficientes. En este caso, puede utilizarse la técnica de Lift Charts, proveniente del marketing, para obtener una seleccionar aquellas mediciones sobre las que se tiene una gran confianza de que son buenas.
 
-![](../_images/ionosfera_liftchart.png)
+![](..\_images\ionosfera_liftchart.png)
 
 En este lift chart, dividido en deciles, se observa que en los primeros 4 deciles, se capturan 140 mediciones buenas, y se tiene un único falso positivo. Si los investigadores utilizan este método para seleccionar sus mediciones, estarían obteniendo 99,2% señales buenas. Mientras que, si el dataset trabajado es representativo de la realidad, eligiendo muestras al azar hubieran obtenido solo 61,4% señales buenas.
 
