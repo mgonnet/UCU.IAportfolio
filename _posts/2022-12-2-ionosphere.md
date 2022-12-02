@@ -7,7 +7,7 @@ En la investigación ionosférica, se deben clasificar las lecturas de radar com
 
 ## Anális de los datos
 
-Los datos son obtenidos por un radar ubicado en Goose Bay, Labrador. Consiste de 16 antenas de alta frecuencia y otra de frecuencia entre 8 a 20 MHz. El radar emite un patrón de multipulso a la atmósfera. Entre cada pulso, un receptor es encendido, que realiza las mediciones. La medición es un numero complejo, es decir, está compuesta por un coeficiente real y un coeficiente ireal. Por tanto, cada dato está compuesto de 17 pares de predictores (uno por cada antenta). Además, el dataset cuenta con un atributo label, que es el que clasifica la medición como buena o no, los valores puede ser `g` (good) o `b` (bad). Es por tanto un problema de clasificación binaria. Un 61,4% corresponde a `g` y 35,9% corresponde a `b`
+Los datos son obtenidos por un radar ubicado en Goose Bay, Labrador. Consiste de 16 antenas de alta frecuencia y otra de frecuencia entre 8 a 20 MHz. El radar emite un patrón de multipulso a la atmósfera. Entre cada pulso, un receptor es encendido, que realiza las mediciones. La medición es un numero complejo, es decir, está compuesta por un coeficiente real y un coeficiente imaginario. Por tanto, cada dato está compuesto de 17 pares de predictores (uno por cada antenta). Además, el dataset cuenta con un atributo label, que es el que clasifica la medición como buena o no, los valores puede ser `g` (good) o `b` (bad). Es por tanto un problema de clasificación binaria. Un 61,4% corresponde a `g` y 35,9% corresponde a `b`
 
 El dataset ya está normalizado al rango [-1, 1], no hay faltantes y se cuenta con label para todos los datos.
 
