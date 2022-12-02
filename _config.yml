@@ -1,5 +1,7 @@
 theme: minima
 
+base_url: /IAportfolio
+
 # Minima: show excerpts in the frontpage
 show_excerpts: true
 
