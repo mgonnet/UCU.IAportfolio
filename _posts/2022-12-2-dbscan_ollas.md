@@ -51,6 +51,7 @@ A los efectos de este ejercicio solamente se tomará en consideración el códig
 Se identifican 255 datos válidos.
 
 ![](../_images/ollas_raw.png)
+<img src="{% link https://mgonnet.github.io/IAportfolio/assets/imgs/ollas_raw.png %}" >
 
 
 ## Proceso en Rapidminer
