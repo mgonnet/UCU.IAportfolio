@@ -1,8 +1,8 @@
 ---
-title: "Vertebral Column Dataset"
+title: "Vertebral Column"
 layout: post
 ---
-# Vertebral Column Dataset
+# Vertebral Column
 
 Se analiza un dataset conteniendo seis atributos biomecanicos sobre la forma y orientacion de la pelvis y la espina lumbar. Se intenta clasificar en tres clases, normal `(NO)`, disk hernia `(DH)` o spondilolysthesis `(SL)`. 
 
