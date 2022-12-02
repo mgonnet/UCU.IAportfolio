@@ -7,7 +7,7 @@ Se analiza un dataset conteniendo seis atributos biomecanicos sobre la forma y o
 
 ## Análisis de los datos
 
-Se cuentan con 310 casos, repartidos en 150 para SL, 100 para NO y 60 para DH. No existen datos faltantes para ningún predictor. Las magnitudes de todos los campos son del mismo órden, por lo que en primera instancia no se considera necesario realizar una normalización. Existe un único outlier, que presenta valores desproporcionados para el atributo `degree_spondylolisthesis`. Tiene un valor de 418,54, cuando el promedio una vez retirado es 25,07. Ya que el problema es de clasificación y no de detección de anomalías, se decide retirar.
+Se cuentan con 310 casos, repartidos en 150 para SL, 100 para NO y 60 para DH. Los predictores son 6, todos númericos. No existen datos faltantes para ningún predictor. Las magnitudes de todos los predictores son del mismo órden, por lo que en primera instancia no se considera necesario realizar una normalización. Existe un único outlier, que presenta valores desproporcionados para el atributo `degree_spondylolisthesis`. Tiene un valor de 418,54, cuando el promedio una vez retirado es 25,07. Ya que el problema es de clasificación y no de detección de anomalías, se decide retirar.
 
 Sabiendo que se trata de un problema de clasificación en tres clases, se utiliza el algoritmo de Kmeans de clustering, configurado con K = 3, para analizar que tan separables puedan ser las clases. A continuación se muestra la distribución de las clases dentro de cada cluster.
 
