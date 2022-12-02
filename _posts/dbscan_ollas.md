@@ -1,6 +1,5 @@
 ---
-title: "Tutorial I: my first post"
-date: 2020-03-18
+title: "Clustering de densidad aplicado a datos de ollas y merenderos en Montevideo"
 layout: post
 ---
 

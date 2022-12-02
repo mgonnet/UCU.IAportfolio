@@ -1,3 +1,8 @@
+---
+title: "Ionosfera"
+layout: post
+---
+
 # Ionosfera
 
 En la investigación ionosférica, se deben clasificar las lecturas de radar como utilizables para el analisis o no. Es una tarea demandante que requiere intervención humana. Se ha consultado un paper que analiza el uso de MLFN (multilayer feedforward networks) para realizar la tarea de clasificación. En su caso, obtuvieron una accuracy de 100% para el set de entrenamiento y de 98% para el set de prueba. Aquí se utilizarán los algoritmos Knn, Random Forest y Regresión Logística, para comparar los resultados obtenidos.
