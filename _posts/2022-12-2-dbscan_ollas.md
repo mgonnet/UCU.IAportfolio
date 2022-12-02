@@ -3,7 +3,8 @@ title: "Clustering de densidad aplicado a datos de ollas y merenderos en Montevi
 layout: post
 ---
 
-# Clustering de densidad aplicado a datos de ollas y merenderos en Montevideo
+Debido a la situación social generada por la pandemia global, en el último tiempo ha habido un aumento en la cantidad de ollas y merenderos en Montevideo. La Intendencia de Montevideo disponibilizó la información de las ollas apoyadas por sus programas. 
+Este dataset contiene la ubicación en coordenadas geográficas de las ollas, por lo que es un buen caso de estudio para encontrar aquellas regiones con una alta concentración de ollas. Esta información puede ser relevante para mejorar las políticas de apoyo, al permitir desarrollar una mejor logística por ejemplo.
 
 ## Clustering
 
@@ -18,10 +19,6 @@ El principal algoritmo que utiliza este enfoque, es DBSCAN. El algoritmo tiene 3
 Durante esta investigación se observó que ambos parametros deben ser manejados en conjunto. Por ejemplo definir un MinPoints bajo y un epsilon alto, puede provocar que casi todos los puntos pertenezcan a un mismo cluster, ya que estaría definiendo un bajo requisito para clasificar una región como de densidad. En cambio definir un MinPoints alto y un epsilon bajo, haría que casi todos los puntos sean clasificados como ruido, ya que se haría muy exigente la definición de alta densidad.
 2. Clasificar los datos. Pueden ser Núcleo (los puntos dentro del radio epsilon de otro punto), Frontera (aquel punto que esté exactamente a una distancia epsilon de otro punto) y Ruido (todos los demas)
 3. Clustering. Si dos puntos están dentro del epsilon del otro, se marcan como pertenecientes al mismo cluster. Aquellos puntos que no hayan quedado dentro del epsilon de ningun otro punto, se marcan como ruido.
-
-## Datos de ollas y merenderos en Montevideo
-Debido a la situación social generada por la pandemia global, en el último tiempo ha habido un aumento en la cantidad de ollas y merenderos en Montevideo. La Intendencia de Montevideo disponibilizó la información de las ollas apoyadas por sus programas. 
-Este dataset contiene la ubicación en coordenadas geográficas de las ollas, por lo que es un buen caso de estudio para encontrar aquellas regiones con una alta concentración de ollas. Esta información puede ser relevante para mejorar las políticas de apoyo, al permitir desarrollar una mejor logística por ejemplo.
 
 ### Obtención de datos y preparación
 
