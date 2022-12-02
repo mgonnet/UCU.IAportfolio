@@ -26,20 +26,20 @@ Se utiliza el algoritmo Knn para realizar la clasificación. Durante la investig
 
 Previendo que haya problemas para diferenciar los casos `DH` de los casos `NO` se utilza el operador MetaCost. Obtener un valor de `No` siendo en realidad cualquiera de los otros dos, es muy malo como diagnóstico, ya que estaría perdiendo la oportunidad de realizar un tratamiento sobre la persona, lo que tiene grandes impactos sobre su salud. El operador MetaCost es recomendado en la documentación de Rapidminer precisamente para aquellos casos en que se quiera mejorar el recall de una clase especifica, indicando la relación de costos en una matriz.
 
-![](../_images/columna_metacost.png)
+<img src="https://mgonnet.github.io/IAportfolio/assets/imgs/columna_metacost.png" >
 
 Aquí se muestra cómo en el operador Metacost se asigna un costo 6 veces mayor a predecir como `NO` aquellos casos que en realidad eran `DH` o `SL`. (DH corresponde a la Class 1, SL a la Class 2 y NO a la Class 3).
 
 De todas formas se realiza un Knn normal, sin MetaCost, a fin de realizar comparaciones. En ambos casos el entrenamiento del modelo se realiza dentro de un operador Cross Validation. Luego de varias pruebas, el Knn se configura con K = 6.
 
-![](../_images/columna_proceso.png)
-![](../_images/columna_proceso_knn.png)
-![](../_images/columna_proceso_metacost.png)
+<img src="https://mgonnet.github.io/IAportfolio/assets/imgs/columna_proceso.png" >
+<img src="https://mgonnet.github.io/IAportfolio/assets/imgs/columna_proceso_knn.png" >
+<img src="https://mgonnet.github.io/IAportfolio/assets/imgs/columna_proceso_metacost.png" >
 
 ## Análisis de resultados
 
-![](../_images/columna_resultado_knn.png)
-![](../_images/columna_resultado_metacost.png)
+<img src="https://mgonnet.github.io/IAportfolio/assets/imgs/columna_resultado_knn.png" >
+<img src="https://mgonnet.github.io/IAportfolio/assets/imgs/columna_resultado_metacost.png" >
 
 ### Knn
 Se observa que como se anticipó, el Knn solo tuvo gran éxito a la hora de predecir que casos son `SL`, obteniendo un recall de 95,3%; pero que tuvo grandes problemas para diferenciar casos de `DH` y en cierta medida `SL` de casos `NO`. En total 28 casos fueron dados de alta estando en realidad enfermos.

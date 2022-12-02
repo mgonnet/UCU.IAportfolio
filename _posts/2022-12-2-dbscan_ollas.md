@@ -50,7 +50,6 @@ A los efectos de este ejercicio solamente se tomará en consideración el códig
 
 Se identifican 255 datos válidos.
 
-![](../_images/ollas_raw.png)
 <img src="https://mgonnet.github.io/IAportfolio/assets/imgs/ollas_raw.png" >
 
 
@@ -63,17 +62,17 @@ En primer lugar se selecciona el Código como atributo de rol ID. Al ser un ejer
 La salida del modelo se escribe en un nuevo CSV, que luego será importado nuevamente a QGIS para poder mostrar los resultados sobre el mapa. El CSV contendrá unicamente el Código y una identificacón de cluster, ya que la aplicación QGIS permite hacer un join con sus datos previamente contenidos.
 
 El Sistema de Referencia de Coordenadas en que QGIS exporta las coordenadas es el EPSG:32721. EPSG es un sistema de coordenadas que tiene la ventaja de que un metro equivale a una unidad del sistema de coordenadas. Es decir, que dos puntos distantes entre si 100 metros, tendrán la distancia euclidiana 100 en este sistema de coordenadas. La contracara de esto, es que para evitar distorsiones en la representación, debe dividir el planeta en varias zonas, dentro de las cuales tienen sentido las coordendas. La 32721 es la que corresponde a nuestro país. Más información al respecto puede encontrarse [aquí](https://epsg.io/32721).
-![](../_images/ollas_process.png)
+<img src="https://mgonnet.github.io/IAportfolio/assets/imgs/ollas_process.png" >
 
 La elección de los parámetros para el DBSCAN no deja de ser hasta cierto punto arbitraria y depende en gran medida del tipo de información que se quiera obtener. Si el objetivo es encontrar regiones en particular dónde haya una gran concentración de ollas, se deben aplicar parámetros estrictos con un Epsilon pequeño y MinPoints alto, sin embargo esto probablemente deje una gran cantidad de puntos marcados como ruido. Aquí se quiere identificar en general aquellos barrios donde haya concentración de ollas, por lo que se aplicarán parámetros más laxos. Luego de un análisis preeliminar y experimentación con diferentes posibles parámetros, se optó por un Epsilon de 1000 y MinPoints 4. Es decir, aquellas zonas en las que haya al menos 4 bocas en un radio de 1km.
 
 ## Análisis de resultados
 
-![](../_images/ollas_clusters.png)
+<img src="https://mgonnet.github.io/IAportfolio/assets/imgs/ollas_clusters.png" >
 
-![](../_images/ollas_clusters_ruido.png)
+<img src="https://mgonnet.github.io/IAportfolio/assets/imgs/ollas_clusters_ruido.png" >
 
-![](../_images/ollas_clusters_grafico.png)
+<img src="https://mgonnet.github.io/IAportfolio/assets/imgs/ollas_clusters_grafico.png" >
 
 Como se observa en los mapas (el primero incluye solo los clusters y el segundo agrega el ruido), se obtuvieron dos zonas principales. La primera concentrada en los barrios Casabó, Piedras Blancas y Las Acacias con 65 datos y la segunda en el entorno de los barrios Tres Ombúes, Cerro y Casabó, con 61 datos. Le siguen otros dos clusters, uno en la zona del Centro con 11 datos y otro en Conciliación con 9. El resto son más pequeños en comparación con entre 3 y 6 datos cada uno.
 
