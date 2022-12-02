@@ -69,6 +69,7 @@ La elección de los parámetros para el DBSCAN no deja de ser hasta cierto punto
 ## Análisis de resultados
 
 ![](../_images/ollas_clusters.png)
+<img src="{{ site.base_url }}{% link /images/ollas_clusters.png %}">
 
 ![](../_images/ollas_clusters_ruido.png)
 
