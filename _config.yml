@@ -1,1 +1,7 @@
 theme: minima
+
+# Minima: show excerpts in the frontpage
+show_excerpts: true
+
+include:
+    - _pages
