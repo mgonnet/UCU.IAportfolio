@@ -53,3 +53,5 @@ Se intentó realizar un sampleo para entrenar el modelo con un 50 - 50 de medici
 
 *Acceso al paper estudiado* 
 https://www.jhuapl.edu/Content/techdigest/pdf/V10-N03/10-03-Sigillito_Class.pdf
+*Dataset*
+https://archive-beta.ics.uci.edu/dataset/52/ionosphere

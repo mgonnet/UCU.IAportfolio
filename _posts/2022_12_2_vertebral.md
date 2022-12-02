@@ -57,3 +57,6 @@ Por su parte para la clase `SL` se obtuvieron buenos valores de recall y precisi
 * Se concluye que el modelo con MetaCost y Knn es muy confiable para identificar la enfermedad spondilolysthesis, con una precisión de 92,41%.
 * También es útil para descartar casos de no enfermedad, con una precisión de 97,44%
 * Sin embargo, el médico deberá analizar cuidadosamente aquellos casos clasificados como disk hernia, ya que en realidad solo un 51,79% realmente la tienen.
+
+*Dataset* 
+https://www.kaggle.com/code/caesarlupum/starter-mia-marketplace-vertebral-collumn

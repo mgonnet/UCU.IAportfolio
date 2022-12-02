@@ -1,13 +1,7 @@
 ---
 permalink: /
-layout: page
+layout: home
 title: Bienvenidos
 ---
 
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href=".{{ post.url }}">{{ post.title }}</a>
-    </li>
-  {% endfor %}
-</ul>
+[Clustering de densidad aplicado a datos de ollas y merenderos en Montevideo](_posts\2022_12_2_dbscan_ollas.md)
